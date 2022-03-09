@@ -1,0 +1,102 @@
+.about
+  padding-top: 212px
+  height: 110vh
+  &-container
+    display: flex
+    flex-direction: column
+    align-items: center
+  &-wrapper
+    width: 60%
+    margin: auto
+  &-wrap
+    display: flex
+    align-items: center
+  &-title
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 42px
+    line-height: 57px
+    text-transform: uppercase
+    color: #664A27
+    margin-left: 30px
+    &-adult
+      color: #5C6366
+  &__ul
+    list-style: none
+    position: relative
+    padding-left: 85px
+    &-info
+      list-style: none
+      padding: 0
+
+  &__item
+    position: relative
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 28px
+    line-height: 38px
+    color: #664A27
+    margin-bottom: 40px
+    cursor: pointer
+    &-info
+      display: none
+      font-size: 18px
+      line-height: 24px
+      color: #000000
+      margin: 30px 0 30px
+      transition: all .5s
+      max-width: 99%
+      &-active
+        display: block
+    &::before
+      content: ''
+      position: absolute
+      top: 8px
+      left: -40px
+      width: 20px
+      height: 20px
+      background-color: #CAE05E
+      border: 2px solid #664A27
+      border-radius: 50%
+    &-blue
+      &::before
+        background-color: #579CD7
+    &-pink
+      &::before
+        background-color: #FFB9BB
+    &-yellow
+      &::before
+        background-color: #FFDF75
+    &-brown
+      &::before
+        background-color: #FFD9C2
+    &-light-blue
+      &::before
+        background-color: #C4E9FF
+    &-red
+      &::before
+        background-color: #FF7F74
+    &-adult
+      color: #5C6366
+      &::before
+        background-color: #fff
+        border: 2px solid #24743B
+
+    &-ul
+      list-style: disc
+    &-list
+      margin-bottom: 10px
+  &__arrow
+    margin-left: 30px
+    top: 15px
+    width: 30px
+    height: 16px
+    cursor: pointer
+    transition: transform .5s
+    &-rotate
+      transform: rotate(180deg)
+  &-img
+    &-adult
+      height: 117px
